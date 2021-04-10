@@ -25,14 +25,14 @@ if (passphrase=="easy mail"):
     print("Access Granted...!!!")
     print("Welcome Back")
     import smtplib 
-    gmailaddress = "dineshprabhu0705@gmail.com"
-    gmailpassword = "Nhce2019"
+    gmailaddress = "youremail@email.com"
+    gmailpassword = "yourpassword"
     mailto = SRG.Recognizer()
     with SRG.Microphone() as m:
         print("~~~***|RECIPIENT LIST|***~~~")
         print("Choose the recipient")
-        print("1)Rohit")
-        print("2)Dinesh")
+        print("1)Recipient1")
+        print("2)Recipient2")
      
         audio_input = mailto.record(m, duration=3)
     
@@ -48,10 +48,10 @@ if (passphrase=="easy mail"):
             print("Couldn't process the audio input.")
     mailto=text_output_m
     
-    if (mailto=="Surya"):
-        mailto=("surya47sara@gmail.com")
-    elif(mailto=="Dinesh"):
-        mailto=("dineshprabhu0705@yahoo.com")
+    if (mailto=="Recipient1"):
+        mailto=("recipient1@gmail.com")
+    elif(mailto=="Recipient2"):
+        mailto=("recipient2@yahoo.com")
     else:
         print("Recipient not found")
     msg =SRG.Recognizer()
